@@ -6,12 +6,21 @@
 	<body style="background-image: url('../Resources/Platform.png'); background-position: top center;  " onload="javascript:Start()">
 		<div class="worldCentered world" style=" height:760px;width:560px; background-image: url('../Resources/Background.png'); top: 12px;">
 		
-			<!-- Top Right Block -->
-			<div class="platform"  style="position:absolute;background-image: url('../Resources/Platform.png');left:440px;top:0px; height:160px;width:120px;"></div>
-			<!-- Left Side Block  -->
-			<div class="platform"  style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:240px; height:480px;width:80px;"></div>
+			<!-- Torches  -->
+			<div style="position:absolute; background-image: url('../Resources/torch.png'); left:155px;top:140px; height:30px;width:10px;"></div>
+			<div style="position:absolute; background-image: url('../Resources/torch.png'); left:255px;top:140px; height:30px;width:10px;"></div>
+
+			<!-- Player -->
+			<div class="player" style="position:absolute;left:40px;top:120px; height:55px;width:35px; background-position: 18px 9px;  background-image: url('../Resources/character.png');">
+			</div>
 			
+			<!-- Blocks -->
+				<!-- Top Right Block -->
+				<div class="platform"  style="position:absolute;background-image: url('../Resources/Platform.png');left:440px;top:0px; height:160px;width:120px;"></div>
+				
 			<!-- Platforms -->
+				<!-- Left Top Platform  -->
+				<div class="platform"  style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:240px; height:80px;width:240px;"></div>
 				<!-- Floor  -->
 				<div class="platform"  style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:720px; height:40px;width:560px;"></div>
 				<!-- Platform 1  -->
@@ -30,39 +39,31 @@
 				
 			<!-- Links to the websites (portals)  -->
 			<div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:160px; height:80px;width:40px;" href="../Games/SoulOfTheForest/SoulOfTheForest.html"></div>
-            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:320px; height:80px;width:40px;" href="../Games/GoodNightMonster/GoodNightMonster.html"></div>
-            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:480px; height:80px;width:40px;" href="../Games/BouncingKnight/BouncingKnight.html"></div>
-            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:640px; height:80px;width:40px;" href="../Games/EndlessShipshifter/EndlessShipshifter.html"></div>
-            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:800px; height:80px;width:40px;" href="../Games/TheInfinityPrison/TheInfinityPrison.html"></div>
+            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:120px;top:320px; height:80px;width:40px;" href="../Games/GoodNightMonster/GoodNightMonster.html"></div>
+            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:320px; height:80px;width:40px;" href="../Games/BouncingKnight/BouncingKnight.html"></div>
+            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:120px;top:480px; height:80px;width:40px;" href="../Games/EndlessShipshifter/EndlessShipshifter.html"></div>
+            <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:520px;top:480px; height:80px;width:40px;" href="../Games/TheInfinityPrison/TheInfinityPrison.html"></div>
             <div class="portal" style="position:absolute; background-image: url('../Resources/Portal.png'); left:0px;top:160px; height:80px;width:40px;" href="../Index.html"></div>
-            
-			<!-- Torches  -->
-			<div style="position:absolute; background-image: url('../Resources/torch.png'); left:155px;top:140px; height:30px;width:10px;"></div>
-			<div style="position:absolute; background-image: url('../Resources/torch.png'); left:255px;top:140px; height:30px;width:10px;"></div>
-
-			<!-- Player -->
-			<div class="player" style="position:absolute;left:40px;top:120px; height:55px;width:35px; background-position: 18px 9px;  background-image: url('../Resources/character.png');">
-			</div>
 			
 			<!-- Game Names -->
 			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:400px;top:240px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="../Games/SoulOfTheForest/SoulOfTheForest.html">Soul of the forest (LD33)</a></a></p>
+				<p class="contentInsideDiv"><a href="../Games/SoulOfTheForest/SoulOfTheForest.html">Soul of the forest</a></a></p>
+			</div>
+			
+			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:400px; height:20px;width:160px;">
+				<p class="contentInsideDiv"><a href="../Games/GoodNightMonster/GoodNightMonster.html">Good night monster</a></a></p>
 			</div>
 			
 			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:400px;top:400px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="../Games/GoodNightMonster/GoodNightMonster.html">Good night monster (LD34)</a></a></p>
+				<p class="contentInsideDiv"><a href="../Games/BouncingKnight/BouncingKnight.html">Bouncing Knight</a></a></p>
+			</div>
+			
+			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:560px; height:20px;width:160px;">
+				<p class="contentInsideDiv"><a href="../Games/EndlessShipshifter/EndlessShipshifter.html">Endless Shipshifter</a></a></p>
 			</div>
 			
 			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:400px;top:560px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="../Games/BouncingKnight/BouncingKnight.html">Bouncing Knight (LD35)</a></a></p>
-			</div>
-			
-			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:400px;top:720px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="../Games/EndlessShipshifter/EndlessShipshifter.html">Endless Shipshifter (LD36)</a></a></p>
-			</div>
-			
-			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:400px;top:880px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="../Games/TheInfinityPrison/TheInfinityPrison.html">The Infinity Prison (LD37)</a></a></p>
+				<p class="contentInsideDiv"><a href="../Games/TheInfinityPrison/TheInfinityPrison.html">The Infinity Prison</a></a></p>
 			</div>
 			
 			<!-- Title --> 
