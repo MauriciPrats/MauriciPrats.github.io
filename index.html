@@ -1,10 +1,79 @@
-<!DOCTYPE html>
 <html>
-<body>
+	<script type="text/javascript" src="Resources/engine.js"></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Resources/StyleSheet.css">
+	</head>
+	<body style="background-image: url('Resources/Platform.png'); background-position: top center;  " onload="javascript:Start()">
+		<div class="worldCentered world" style=" height:720px;width:800px; background-image: url('Resources/Background.png'); top: 12px;">
+			<!-- Platforms -->
+			<!-- Website Name -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:320px;top:0px; height:40px;width:160px;">
+			<p class="contentInsideDiv"">Multiplexor's Website</p>
+			</div>
+			<!-- Middle Platform  -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:320px;top:240px; height:400px;width:160px;"></div>
+			<!-- Small platforms  -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:160px;top:240px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:600px;top:240px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:280px;top:360px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:480px;top:360px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:160px;top:480px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:600px;top:480px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:280px;top:600px; height:40px;width:40px;"></div>
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:480px;top:600px; height:40px;width:40px;"></div>
+			
+			<!-- Links to the websites (portals)  -->
+			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:0px;top:160px; height:80px;width:40px;" href="https://es.linkedin.com/in/maurici-prats-i-carranza-a072b4a6"></div>
+			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:0px;top:400px; height:80px;width:40px;" href="https://github.com/MauriciPrats/CycleEternalCode"></div>
+			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:760px;top:160px; height:80px;width:40px;" href="Games/LudumDareGames.html"></div>
+			<!--<div class="portal" style="position:absolute; background-image: url('Portal.png'); left:0px;top:400px; height:80px;width:40px;" href="Index.html"></div>-->
+			<<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:760px;top:400px; height:80px;width:40px;" href="https://dragonflowstudio.wordpress.com"></div>
+			<!--<div class="portal" style="position:absolute; background-image: url('Portal.png'); left:0px;top:640px; height:80px;width:40px;" href="Index.html"></div>-->
+			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:760px;top:640px; height:80px;width:40px;" href="Games/CyclicInfinitum/CyclicInfinitum.html"></div>
+			
+			<!-- Torches  -->
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:335px;top:100px; height:30px;width:10px;" href="Desktop.html"></div>
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:455px;top:100px; height:30px;width:10px;" href="Desktop.html"></div>
+			
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:175px;top:360px; height:30px;width:10px;" href="Desktop.html"></div>
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:615px;top:360px; height:30px;width:10px;" href="Desktop.html"></div>
+			
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:175px;top:600px; height:30px;width:10px;" href="Desktop.html"></div>
+			<div style="position:absolute; background-image: url('Resources/torch.png'); left:615px;top:600px; height:30px;width:10px;" href="Desktop.html"></div>
+			
+			<!-- Game Platforms -->
+			<!-- Game 1 -->
+			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:640px;top:0px; height:160px;width:160px;">
+				<p class="contentInsideDiv"><a href="Games/LudumDareGames.html">Game Jam Games</a></p>
+			</div>
+			<!-- Game 2 -->
+			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:640px;top:240px; height:160px;width:160px;">
+				<p class="contentInsideDiv"><a href="https://dragonflowstudio.wordpress.com/lost-light/">Lightguard's Legacy</a></p>
+			</div>
+			<!-- Game 3 -->
+			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:640px;top:480px; height:160px;width:160px;">
+				<p class="contentInsideDiv" ><a href="Games/CyclicInfinitum/CyclicInfinitum.html">Cyclic Infinitum</a></p>
+			</div>
+			
+			<!-- Contact Platforms -->
+			<!-- Contact 1 -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:0px; height:160px;width:160px;">
+				<p class="contentInsideDiv"> <a href="https://es.linkedin.com/in/maurici-prats-i-carranza-a072b4a6">Linkedin</a></p>
+			</div>
+			<!-- Contact 2 -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:240px; height:160px;width:160px;">
+				<p class="contentInsideDiv"><a href="https://github.com/MauriciPrats/CycleEternalCode">Code Showcase</a></p>
+			</div>
+			<!-- Contact 3 -->
+			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:480px; height:160px;width:160px;"></div>
+			
+			<!-- Player -->
+			<div class="player" style="position:absolute;left:385px;top:100px; height:55px;width:35px; background-position: 18px 9px;  background-image: url('Resources/character.png');">
+			</div>
 
-<h1>My First Heading</h1>
+			
 
-<p>My first paragraph.</p>
-
-</body>
+		
+		</div>
+	</body>
 </html>
