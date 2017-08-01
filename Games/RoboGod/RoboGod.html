@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../../Resources/StyleSheet.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+	<script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RoboGod.json");
+    </script>
   </head>
   <body class="template" style="background-image: url('../../Resources/Background.png'); background-position: top center;  ">
   
@@ -17,23 +20,8 @@
 		This game has been created for the Ludum Dare 39 Edition (Compo)
 		</p>
 	</div>
-	
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
-    </div>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/RoboGod.data",
-    codeUrl: "Release/RoboGod.js",
-    asmUrl: "Release/RoboGod.asm.js",
-    memUrl: "Release/RoboGod.mem",
-  };
-</script>
+	<div id="gameContainer" style="width: 1280px; height: 720px; margin: auto"></div>
+
 <script src="Release/UnityLoader.js"></script>
 
   </body>
