@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Ultimate Frontier</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -12,14 +11,18 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TheUltimateFrontier.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  
+  <body class="template" style="background-image: url('../../Resources/Background.png'); background-position: top center;  ">
+  	<div class="worldCentered" style="height:80px;width:460px; top center;">
+		<p class="contentInsideDiv">
+		The Ultimate Frontier
+		<br/><br/>
+		This game has been created for the Ludum Dare 44 Edition (Compo)
+		</p>
+	</div>
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Ultimate Frontier</div>
-      </div>
-    </div>
+		<div id="gameContainer" style="width: 1280px; height: 720px"></div>
+	</div>
   </body>
+
 </html>
