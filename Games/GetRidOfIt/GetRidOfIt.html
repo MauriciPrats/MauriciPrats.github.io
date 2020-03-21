@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../Resources/StyleSheet.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body class="template" style="background-image: url('../../Resources/Background.png'); background-position: top center;  ">
+  
+  <div class="worldCentered" style="height:80px;width:460px; top center;">
+		<p class="contentInsideDiv">
+		Get Rid of It
+		<br/><br/>
+		This game has been created for the Ludum Dare 40 Edition (Compo)
+		</p>
+	</div>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+    </div>
+  </body>
+</html>
