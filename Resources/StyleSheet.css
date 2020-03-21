@@ -10,8 +10,29 @@
     position: absolute;
     bottom: 0px;
 	margin: 0 auto;
-	background-color: #CC9900;
+	background-color: #D3A724;
 	font-family: myFirstFont;
+	color: #3D3D3D
+}
+
+.hyperlink:link {
+  color: #434DD8;
+}
+
+/* selected link */
+.hyperlink:active {
+  color: #B26BD3;
+}
+
+.contentInsideDivLightColored{
+	width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+	margin: 0 auto;
+	background-color: #DE9858;
+	font-family: myFirstFont;
+	color: #3D3D3D
 }
 
 
