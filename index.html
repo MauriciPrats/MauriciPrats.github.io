@@ -1,71 +1,702 @@
-<html>
-	<script type="text/javascript" src="Resources/engine.js"></script>
-	<head>
-		<link rel="stylesheet" type="text/css" href="Resources/StyleSheet.css">
-	</head>
-	<body style="background-image: url('Resources/Platform.png'); background-position: top center;  " onload="javascript:Start()">
-		<div class="worldCentered world" style=" height:400px;width:800px; background-image: url('Resources/Background.png'); top: 12px;">
-			<!-- Platforms -->
-			<!-- Website Name -->
-
-			<!-- Middle Platform  -->
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:320px;top:240px; height:400px;width:480px;"></div>
-			<!-- Other platforms  -->
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:160px;top:280px; height:40px;width:40px;"></div>
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:240px; height:80px;width:160px;"></div>
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:280px;top:280px; height:120px;width:40px;"></div>
-			
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:0px; height:80px;width:800px;"></div>
-			
-			
-
-			
-			<!-- Links to the websites (portals)  -->
-			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:760px;top:160px; height:80px;width:40px;" href="Games/LudumDareGames.html"></div>
-			<!--<div class="portal" style="position:absolute; background-image: url('Portal.png'); left:0px;top:400px; height:80px;width:40px;" href="Index.html"></div>-->
-			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:0px;top:160px; height:80px;width:40px;" href="Games/CyclicInfinitum/CyclicInfinitum.html"></div>
-
-			
-			<div class="portal" style="position:absolute; background-image: url('Resources/Portal.png'); left:0px;top:320px; height:80px;width:40px;" href="https://dragonflowstudio.wordpress.com"></div>
-			<!--<div class="portal" style="position:absolute; background-image: url('Portal.png'); left:0px;top:640px; height:80px;width:40px;" href="Index.html"></div>-->
-			
-			<!-- Torches  -->
-			<div style="position:absolute; background-image: url('Resources/torch.png'); left:255px;top:180px; height:30px;width:10px;" href="Desktop.html"></div>
-			<div style="position:absolute; background-image: url('Resources/torch.png'); left:525px;top:180px; height:30px;width:10px;" href="Desktop.html"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	
-			
-			<!-- Game Platforms -->
-			<!-- Game 1 -->
-			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:680px;top:260px; height:20px;width:120px;">
-				<p class="contentInsideDiv"><a href="Games/LudumDareGames.html">Game Jam </br> Games</a></p>
-			</div>
-			<!-- Game 2 -->
-			<div class="platform" style="position:absolute;background-image: url('Resources/Platform.png');left:0px;top:420px; height:20px;width:160px;">
-				<p class="contentInsideDiv"><a href="https://dragonflowstudio.wordpress.com/lost-light/">Lightguard's Legacy</a></br>(University Project)</p>
-			</div>
-			<!-- Game 3 -->
-			<div class="platform" style="position:absolute;background-image: url('../Resources/Platform.png');left:0px;top:260px; height:20px;width:160px;">
-				<p class="contentInsideDiv" ><a href="Games/CyclicInfinitum/CyclicInfinitum.html">Cyclic Infinitum</a> </br>(Personal Project)</p>
-			</div>
-			
-			<!-- Contact Platforms -->
-			<!-- Contact 1 -->
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Maurici Prats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="vCard & Resume Template" />
+	<meta name="keywords" content="Maurici Prats Curriculum" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+	
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
 
-			
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:340px;top:30px; height:40px;width:120px;">
-			<p class="contentInsideDiv""></a>Maurici Prats </br> Game Projects</p>
-			</div>
-			
-			<div class="platform"  style="position:absolute;background-image: url('Resources/Platform.png');left:330px;top:250px; height:40px;width:140px;">
-			<p class="contentInsideDiv""></a> WASD -> Move </br> Space -> Jump</p>
-			</div>
-			
-			<!-- Player -->
-			<div class="player" style="position:absolute;left:385px;top:100px; height:55px;width:35px; background-position: 18px 9px;  background-image: url('Resources/character.png');"></div>
+	<!--
+		Background Gradient
+	-->
+	<link rel="stylesheet" href="css/gradient.css" />
+	
+	<!--
+		Template New-Skin
+	-->
+	<!--link rel="stylesheet" href="css/new-skin/new-skin.css" />
 
-			
+	<!--
+		Template RTL
+	-->
+	<!--<link rel="stylesheet" href="css/rtl.css" />-->
+	
+	<!--
+		Template Colors
+	-->
+	<link rel="stylesheet" href="css/template-colors/green.css" />
+	<!--<link rel="stylesheet" href="css/template-colors/blue.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
 
+	<!--
+		Template Dark
+	-->
+	<!--<link rel="stylesheet" href="css/template-dark/dark.css" />-->
+
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	
+</head>
+
+<body>
+	<div class="page">
 		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</body>
+
+		<!-- background -->
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			</ul>
+		</div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">About</span>
+							</a>
+						</li>
+						<!--li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li-->
+						<li>
+							<a href="#works-card">
+								<span class="icon ion-paintbrush"></span>
+								<span class="link">Projects</span>
+							</a>
+						</li>
+						<!--li>
+							<a href="#blog-card">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li-->
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-at"></span>
+								<span class="link">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(images/bg.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="images/profile.png" alt="" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Maurici Prats</div>
+					<div class="subtitle">QA Professional</div>
+
+					<!-- profile socials -->
+					<!--div class="social">
+						<a target="_blank" href="https://dribbble.com/"><span class="fab fa-dribbble"></span></a>
+						<a target="_blank" href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="https://www.spotify.com/"><span class="fab fa-spotify"></span></a>
+						<a target="_blank" href="https://stackoverflow.com/"><span class="fab fa-stack-overflow"></span></a>
+					</div-->
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="./images/MauriciPrats_Curriculum.pdf" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="#" class="lnk discover">
+							<span class="text">Contact Me</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 
+				Card - About
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+
+					<!-- 
+						About 
+					-->
+					<div class="content about">
+
+						<!-- title -->
+						<div class="title">About Me</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										I am Maurici Prats, a QA Professional with a great passion for Technology and Videogames.
+										I have experience working on different roles inside of Quality Assurance and I also am experienced 
+										with programming and software development.
+									</p>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li><strong>Born in . . . .</strong> 1989</li>
+										<li><strong>Residence . . .</strong> USA</li>
+										<li><strong>Status . . . . .</strong> Available</li>
+										<li><strong>Address . . . . .</strong> Mountain View, CA</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Services
+					-->
+					<div class="content services">
+
+						<!-- title -->
+						<div class="title">My Experience</div>
+
+						<!-- content -->
+						<div class="row service-items border-line-v">
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-bug"></span></div>
+									<div class="name">Quality Assurance</div>
+									<p>
+										I have 4 and a half years of experience working as a QA Tester and QA Lead on the mobile games industry. </br> </br>
+										During this time I have performed all sort of tasks such as planning and executing functionality, compatibility, performance and compliance tests. </br> </br>
+										I also have been in charge of organizing and definining the test strategy for different products during the stages of development and live operations. 
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-code"></span></div>
+									<div class="name">Programming</div>
+									<p>
+										I have a career in Computer Science and 2 years of experience working as a programmer. </br></br>
+										I am familiar with multiple programming languages such as Java, C++, Javascript, Python and other languages such as SQL.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<!--div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-speakerphone"></span></div>
+									<div class="name">Advetising</div>
+									<p>
+										Advertising services include television, radio, print, mail and web.
+									</p>
+								</div>
+							</div-->
+
+							<!-- service item -->
+							<!--div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
+									<div class="name">Game Development</div>
+									<p>
+										Developing memorable and unique mobile android, ios games.
+									</p>
+								</div>
+							</div-->
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Price Tables
+					-->
+					<!--div class="content pricing"-->
+
+						<!-- title -->
+						<!--div class="title">Pricing</div-->
+
+						<!-- content -->
+						<!--div class="row pricing-items"-->
+
+							<!-- pricing item -->
+							<!--div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="pricing-item">
+									<div class="icon"><i class="ion ion-speedometer speed-basic"></i></div>
+									<div class="name">Basic</div>
+									<div class="amount">
+										<span class="dollar">$</span>
+										<span class="number">22</span>
+										<span class="period">hour</span>
+									</div>
+									<div class="feature-list">
+										<ul>
+											<li>Web Development</li>
+											<li>Advetising</li>
+											<li>Game Development</li>
+											<li class="disable">Music Writing</li>
+											<li class="disable">Photography <strong>new</strong></li>
+										</ul>
+									</div>
+									<div class="lnks">
+										<a href="#" class="lnk">
+											<span class="text">Buy Basic</span>
+											<i class="ion ion-speedometer speed-basic"></i>
+										</a>
+									</div>
+								</div>
+							</div-->
+
+							<!-- pricing item -->
+							<!--div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="pricing-item">
+									<div class="icon"><i class="ion ion-speedometer"></i></div>
+									<div class="name">Pro</div>
+									<div class="amount">
+										<span class="dollar">$</span>
+										<span class="number">48</span>
+										<span class="period">hour</span>
+									</div>
+									<div class="feature-list">
+										<ul>
+											<li>Web Development</li>
+											<li>Advetising</li>
+											<li>Game Development</li>
+											<li>Music Writing</li>
+											<li>Photography <strong>new</strong></li>
+										</ul>
+									</div>
+									<div class="lnks">
+										<a href="#" class="lnk">
+											<span class="text">Buy Pro</span>
+											<i class="ion ion-speedometer"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div-->
+
+					<!--
+						Fun Fact
+					-->
+					<div class="content fuct">
+
+						<!-- title -->
+						<div class="title">My Hobbies</div>
+
+						<!-- content -->
+						<div class="row fuct-items">
+
+							<!-- hobby item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-flag"></span></div>
+									<div class="name">Traveling</div>
+								</div>
+							</div>
+							
+							<!-- hobby item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-ios-game-controller-a"></span></div>
+									<div class="name">Gaming</div>
+								</div>
+							</div>
+							
+							<!-- hobby item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-ios-musical-note"></span></div>
+									<div class="name">Music</div>
+								</div>
+							</div>
+							
+							<!-- hobby item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-android-phone-portrait"></span></div>
+									<div class="name">Technology</div>
+								</div>
+							</div>
+
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Clients
+					-->
+					<!--div class="content clients"-->
+
+						<!-- title -->
+						<!--div class="title">Clients</div-->
+
+						<!-- content -->
+						<!--div class="row client-items"-->
+
+							<!-- client item -->
+							<!--div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://www.google.com">
+											<img src="images/clients/client_1.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div-->
+
+							<!-- client item -->
+							<!--div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://www.google.com">
+											<img src="images/clients/client_2.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div-->
+
+							<!-- client item -->
+							<!--div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://www.google.com">
+											<img src="images/clients/client_3.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div-->
+
+							<!-- client item -->
+							<!--div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://www.google.com">
+											<img src="images/clients/client_4.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div-->
+
+					<!--
+						Testimonials
+					-->
+					<!--div class="content testimonials"-->
+
+						<!-- title -->
+						<!--div class="title">Testimonials</div-->
+
+						<!-- content -->
+						<!--div class="row testimonials-items"-->
+
+							<!-- client item -->
+							<!--div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="revs-carousel default-revs">
+									<div class="owl-carousel">
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Helen Floyd</div>
+														<div class="company">Art Director</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Robert Chase</div>
+														<div class="company">CEO</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Helen Floyd</div>
+														<div class="company">Art Director</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div-->
+
+				</div>
+			</div>
+
+			
+
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						<div class="title">Personal Projects</div>
+
+						<!-- filters -->
+						<!--div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="video" />Video</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="music" />Music</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="design" />Design</label>
+							</div>
+						</div-->
+
+						<!-- content -->
+						<div class="row grid-items border-line-v">
+
+							<!-- QA Automation Projects -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="AutomationSection/index.html">
+											<img src="images/works/QA_Automation.png" alt="" />
+											<span class="info">
+												<span class="ion ion-bug"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="AutomationSection/index.html">QA Automation</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Games -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="GamesSection/index.html">
+											<img src="images/works/GamesIconv2.png" alt="" />
+											<span class="info">
+												<span class="ion ion-ios-game-controller-a"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="GamesSection/index.html">Games</a>
+									</div>
+								</div>
+							</div>
+
+
+							
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			
+
+			<!--
+				Card - Contacts
+			-->
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+
+					<!--
+						Conacts Info
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Get in Touch</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="info-list2">
+									<ul>
+										<li><strong>Address . . . . .</strong> Mountain View, CA</li>
+										<li><strong></strong> </li>
+										<li><strong>Email . . . . . . . . .</strong> mpratscarranza@gmail.com</li>
+										<li><strong></strong> </li>
+										<li><strong>Status . . . . . . . .</strong> Available</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
+	
+</body>
 </html>

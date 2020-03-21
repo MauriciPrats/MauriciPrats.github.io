@@ -8,33 +8,27 @@
 	<link rel="stylesheet" type="text/css" href="../../Resources/StyleSheet.css">
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
-	
   <body class="template" style="background-image: url('../../Resources/Background.png'); background-position: top center;  ">
     
 	<div class="worldCentered" style="height:100px;width:300px; top center;">
 		<p class="contentInsideDiv">
-		Soul of The Forest
+		Bouncing Knight
 		<br/><br/>
-		This game has been created for the Ludum Dare 32 Edition (Compo)
+		This game has been created for the Ludum Dare 34 Edition (Compo)
 		</p>
 	</div>
 	
 	<div class="worldCentered" style="height:300px;width:300px;">
 		<p class="contentInsideDiv">
 			Game is no longer available as a web version due to changes on browsers and unity compatibility.
-			</br> Feel free to check it out on the following link: <a href="http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=50012">Soul of the Forest</a>
+		    Feel free to check it out on the following link: </br></br> <a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=50012">Bouncing Knight</a> </br>
 		</p>
 	</div>
-	
-
-	
-			
-	<!-- 
-	<div class="template-wrap clear">
-	  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="800px"></canvas>
+	<!--
+    <div class="template-wrap clear">
+		<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
     </div>
 	-->
-	
     <script type='text/javascript'>
   // connect to canvas
   var Module = {
@@ -80,11 +74,11 @@
 <script src="Release/fileloader.js"></script>
 <script>if (!(!Math.fround)) {
   var script = document.createElement('script');
-  script.src = "Release/OtherRelease.js";
+  script.src = "Release/WebGL.js";
   document.body.appendChild(script);
 } else {
   var codeXHR = new XMLHttpRequest();
-  codeXHR.open('GET', 'Release/OtherRelease.js', true);
+  codeXHR.open('GET', 'Release/WebGL.js', true);
   codeXHR.onload = function() {
     var code = codeXHR.responseText;
     if (!Math.fround) { 
