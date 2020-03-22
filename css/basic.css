@@ -1031,3 +1031,28 @@ textarea.error::-webkit-input-placeholder {
 
 }
 
+/* Extra */
+.containerv2 {
+	margin: 30px 0 0 240px;
+	width: 480px;
+
+}
+
+.containerv3 {
+	margin: 30px 0 0 -500px;
+	position: absolute;
+	left: 50%;
+	width: 1000px;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	background: #DBDBDB;
+	background: -webkit-linear-gradient(top left, #DBDBDB 0%, #ff9800 100%);
+	background: linear-gradient(to bottom right, #DBDBDB 0%, #ff9800 100%);
+	-o-transition: all 0.4s ease 0s;
+
+}

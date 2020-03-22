@@ -2582,3 +2582,20 @@
 	-webkit-transform: rotate(360deg);
 	transform: rotate(360deg);
 }
+
+
+
+/* Extra */
+.centered {
+	text-align: center;
+}
+
+.titlev2 {
+	margin: 0 0 15px 0;
+	padding: 0 0 5px 0;
+	position: relative;
+	font-size: 17px;
+	color: #171717;
+	line-height: 21px;
+	font-weight: 500;
+}
