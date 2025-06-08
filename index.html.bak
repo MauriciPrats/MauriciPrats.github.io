@@ -185,10 +185,6 @@
 					
 					<!-- profile buttons -->
 					<div class="lnks">
-						<a href="./images/MauriciPrats_Curriculum.pdf" class="lnk">
-							<span class="text">Download CV</span>
-							<span class="ion ion-archive"></span>
-						</a>
 						<a href="#" class="lnk discover">
 							<span class="text">Contact Me</span>
 							<span class="arrow"></span>
@@ -256,7 +252,7 @@
 									<div class="icon"><span class="ion ion-bug"></span></div>
 									<div class="name">Quality Assurance</div>
 									<p>
-										I have more than 4 years of working experience as a QA Tester and QA Lead on the mobile games industry. </br> </br>
+										I have more than 7 years of working experience as a QA Tester and QA Lead on the mobile games industry. </br> </br>
 										
 										During this time I have performed all sort of tasks such as planning and executing functionality, compatibility, performance and compliance tests. </br> </br>
 										
@@ -392,6 +388,16 @@
 
 						<!-- content -->
 						<div class="row fuct-items">
+						
+							<!-- hobby item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="image">
+										<img class="imageRadial" src="images/ScopelyLogo.png" alt="" />
+									</div>
+									<div class="name">Scopely </div>
+								</div>
+							</div>
 
 							<!-- hobby item -->
 							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
@@ -735,7 +741,7 @@
 									<ul>
 										<li><strong>Email . . . . . . . . .</strong> mpratscarranza@gmail.com</li>
 										<li><strong></strong> </li>
-										<li><strong>Linkedin . . . . . . . .</strong> <a target="_blank" href="https://www.linkedin.com/in/maurici-prats-carranza-a072b4a6/">maurici-prats-carranza-a072b4a6</a>  </li>
+										<li><strong>Linkedin . . . . . . . .</strong> <a target="_blank" href="https://www.linkedin.com/in/maurici-prats-carranza-a072b4a6/">maurici prats carranza</a>  </li>
 									</ul>
 								</div>
 							</div>
