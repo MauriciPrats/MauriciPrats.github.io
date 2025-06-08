@@ -185,7 +185,7 @@
 					
 					<!-- profile buttons -->
 					<div class="lnks">
-						<a href="#" class="lnk discover">
+						<a href="#" class="lnk">
 							<span class="text">Contact Me</span>
 							<span class="arrow"></span>
 						</a>
@@ -741,7 +741,7 @@
 									<ul>
 										<li><strong>Email . . . . . . . . .</strong> mpratscarranza@gmail.com</li>
 										<li><strong></strong> </li>
-										<li><strong>Linkedin . . . . . . . .</strong> <a target="_blank" href="https://www.linkedin.com/in/maurici-prats-carranza-a072b4a6/">maurici prats carranza</a>  </li>
+										<li><strong>Linkedin . . . . . .</strong> <a target="_blank" href="https://www.linkedin.com/in/maurici-prats-carranza-a072b4a6/">maurici prats carranza</a>  </li>
 									</ul>
 								</div>
 							</div>
